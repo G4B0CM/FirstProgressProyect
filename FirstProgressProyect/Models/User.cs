@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace FirstProgressProyect.Models
 {
-    public class User
+    abstract public class User
     {
         [Key]
         public int Id { get; set; }

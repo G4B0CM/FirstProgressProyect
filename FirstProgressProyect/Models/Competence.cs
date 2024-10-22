@@ -7,7 +7,10 @@ namespace FirstProgressProyect.Models
     {
         [Key]
         public int Id { get; set; }
+        [Required]
+        [MaxLength(50)]
         public string Name { get; set; }
+        [Required]
         public string Description { get; set; }
         public Category? Category { get; set; }
         [ForeignKey("Category")]
@@ -21,9 +24,6 @@ namespace FirstProgressProyect.Models
         public int MinNumParticipants { get; set; }
         public DateTime Date {  get; set; }
         public DateTime MaxDateOfIncription { get; set; }
-
-
-
 
     }
 }
