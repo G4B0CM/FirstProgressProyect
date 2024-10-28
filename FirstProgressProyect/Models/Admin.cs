@@ -6,6 +6,6 @@ namespace FirstProgressProyect.Models
     {
         [AllowNull]
         public int CompetencesCreated { get; set; }
-        public ICollection<Competence> CreatedCompetences { get; set; }
+        public ICollection<Competence>? CreatedCompetences { get; set; }
     }
 }
