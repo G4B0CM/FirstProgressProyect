@@ -15,7 +15,7 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-black border-bottom box-shadow mb-3" >
             <div class="container-fluid">
-                <a class="navbar-brand text-white" asp-area="" asp-controller="Home" asp-action="Index">FirstProgressProyect
+                <a class="navbar-brand text-white" asp-area="" asp-controller="Home" asp-action="Index">DinersClub
                     <img src="https://cdn-icons-png.freepik.com/512/5968/5968240.png" alt="Logo" style="max-height: 50px; margin-right: 10px;">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -25,7 +25,7 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" asp-area="" asp-controller="Admins" asp-action="Index">Admins</a>
@@ -40,12 +40,15 @@
                             <a class="nav-link text-white" asp-area="" asp-controller="Students" asp-action="Index">Estudiantes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-controller="StudentCompetences" asp-action="Index">TablaIntermedia</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Privacidad</a>
                         </li>
                     </ul>
+                    <div class="navbar-nav">
+                        <a class="nav-link text-white" asp-area="" asp-controller="Auth" asp-action="Login">
+                            <img src="https://cdn.icon-icons.com/icons2/2483/PNG/512/user_icon_149851.png" alt="Logo" style="max-height: 50px; margin-right: 10px;">
+                            Iniciar sesión
+                        </a>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -58,7 +61,7 @@
 
     <footer class="border-top footer text-muted bg-dark">
         <div class="container">
-            <p class="text-white">&copy; 2024 - FirstProgressProyect - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a></p>
+            <p class="text-white">&copy; 2024 - Gabriel C, Emilio G, Eduardo S, Javier V - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a></p>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
