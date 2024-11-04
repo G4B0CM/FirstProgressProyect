@@ -41,5 +41,6 @@ namespace FirstProgressProyect.Controllers
             HttpContext.Session.Clear();
             return RedirectToAction("Login");
         }
+
     }
 }
