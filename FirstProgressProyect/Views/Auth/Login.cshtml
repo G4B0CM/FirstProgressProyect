@@ -1,23 +1,35 @@
 ﻿@{
-    ViewData["Title"] = "Iniciar Sesion";
+    ViewData["Title"] = "Iniciar Sesión";
 }
 
-<h2>Iniciar Sesión</h2>
 
-<!-- Formulario de inicio de sesión -->
-<form asp-action="Login" method="post">
-    <div>
-        <label for="userName">Nombre de Usuario:</label>
-        <input type="text" id="userName" name="userName" required />
-    </div>
-    <div>
-        <label for="password">Contraseña:</label>
-        <input type="password" id="password" name="password" required />
-    </div>
-    <div>
-        <button type="submit">Ingresar</button>
-    </div>
-</form>
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="card shadow-lg" style="max-width: 700px;">
+        <div class="row g-0">
+            <!-- Rectángulo izquierdo para la imagen -->
+            <div class="col-md-6 d-flex align-items-center justify-content-center bg-light">
+                <img src="https://1000marcas.net/wp-content/uploads/2020/08/logo-Diners-Club-International.png" alt="Imagen de inicio de sesión" class="img-fluid p-4" />
+            </div>
+
+            <!-- Rectángulo derecho para el formulario -->
+            <div class="col-md-6">
+                <div class="card-body">
+                    <h2 class="text-center mb-4">Iniciar Sesión</h2>
+
+                    <!-- Formulario de inicio de sesión -->
+                    <form asp-action="Login" method="post">
+                        <div class="mb-3">
+                            <label for="userName" class="form-label">Nombre de Usuario:</label>
+                            <input type="text" id="userName" name="userName" class="form-control" required />
+                        </div>
+                        <div class="mb-4">
+                            <label for="password" class="form-label">Contraseña:</label>
+                            <input type="password" id="password" name="password" class="form-control" required />
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Ingresar</button>
+                        </div>
+                    </form>
 
 <!-- Mensaje de error si las credenciales son incorrectas -->
 @if (ViewBag.Error != null)
