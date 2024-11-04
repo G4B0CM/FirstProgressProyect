@@ -3,14 +3,19 @@
 @{
     ViewData["Title"] = "Index";
 }
+<div style=" background-color: #173258; min-height: 100vh;"
 
-<h1>Index</h1>
+
+
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create"class="btn btn-primary">Crear Competencias</a>
 </p>
-<table class="table">
+
+
+<table class="table" style="color: #FFFF">
     <thead>
+        
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Name)
@@ -44,40 +49,42 @@
     </thead>
     <tbody>
 @foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Category.Type)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Admin.ConfirmPassword)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NumParticipants)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MaxNumParticipants)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MinNumParticipants)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Date)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MaxDateOfIncription)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Category.Type)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Admin.ConfirmPassword)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NumParticipants)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MaxNumParticipants)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MinNumParticipants)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MaxDateOfIncription)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+      
 }
     </tbody>
 </table>
+</div>
