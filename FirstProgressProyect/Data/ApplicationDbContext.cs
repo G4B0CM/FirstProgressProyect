@@ -21,4 +21,5 @@ public DbSet<FirstProgressProyect.Models.Category> Category { get; set; } = defa
 public DbSet<FirstProgressProyect.Models.Competence> Competence { get; set; } = default!;
 
 public DbSet<FirstProgressProyect.Models.StudentCompetence> StudentCompetence { get; set; } = default!;
-    }
+    public DbSet<FirstProgressProyect.Models.Login> Logins { get; set; } = default!;
+}
