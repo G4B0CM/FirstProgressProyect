@@ -130,32 +130,6 @@ namespace FirstProgressProyect.Migrations
                     b.ToTable("Competence");
                 });
 
-            modelBuilder.Entity("FirstProgressProyect.Models.Login", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Password")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<int>("Rol")
-                        .HasColumnType("int");
-
-                    b.Property<string>("UserName")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Logins");
-                });
-
             modelBuilder.Entity("FirstProgressProyect.Models.Student", b =>
                 {
                     b.Property<int>("Id")
