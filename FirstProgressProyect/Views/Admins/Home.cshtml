@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="text-center">
+    <h1 class="display-4" style="color: white;">Bienvenido a la página principal del Administrador</h1>
+</div>
+<div id="Inicio" class="container">
+    <div class="row">
+        
+        <div class="col-md-3 mb-4">
+            <div class="card card-equal-height" style="width: 100%;">
+                <img src="https://api.institutoiea.org/1708797983370-5901a639-fdcc-4090-a9cf-8b94c684e0f1.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Admins!</h5>
+                    <p class="card-text">Ver índice de Admins</p>
+                    <a href="@Url.Action("Index", "Admins")" class="btn btn-primary">Vamos allá!</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-3 mb-4">
+            <div class="card card-equal-height" style="width: 100%;">
+                <img src="https://marketing4ecommerce.mx/wp-content/uploads/2016/07/CategoriaOk.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Categorias!</h5>
+                    <p class="card-text">Ver el índice de las categorias referentes a competencias</p>
+                    <a href="@Url.Action("Index", "Categories")" class="btn btn-primary">Vamos allá!</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-3 mb-4">
+            <div class="card card-equal-height" style="width: 100%;">
+                <img src="https://oposmadrid.es/wp-content/uploads/2023/11/Imagenes-Blog-Opos-Madrid.png" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Competencias!</h5>
+                    <p class="card-text">Ver el índice de las Competencias</p>
+                    <a href="@Url.Action("Index", "Competences")" class="btn btn-primary">Vamos allá!</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-3 mb-4">
+            <div class="card card-equal-height" style="width: 100%;">
+                <img src="https://img.freepik.com/fotos-premium/longitud-total-estudiantes-universitarios-felices-caminando-juntos-campus_763111-5348.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Estudiantes!</h5>
+                    <p class="card-text">Ver el índice de los Estudiantes</p>
+                    <a href="@Url.Action("Index", "Students")" class="btn btn-primary">Vamos allá!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

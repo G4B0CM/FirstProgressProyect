@@ -23,7 +23,7 @@ namespace FirstProgressProyect.Controllers
         {
             return View(await _context.Student.ToListAsync());
         }
-
+        
         // GET: Students/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -44,6 +44,10 @@ namespace FirstProgressProyect.Controllers
 
         // GET: Students/Create
         public IActionResult Create()
+        {
+            return View();
+        }
+        public IActionResult Home()
         {
             return View();
         }

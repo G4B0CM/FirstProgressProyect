@@ -23,7 +23,10 @@ namespace FirstProgressProyect.Controllers
         {
             return View(await _context.Admin.ToListAsync());
         }
-
+        public IActionResult Home()
+        {
+            return View();
+        }
         // GET: Admins/Details/5
         public async Task<IActionResult> Details(int? id)
         {

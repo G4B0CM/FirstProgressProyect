@@ -26,11 +26,11 @@ namespace FirstProgressProyect.Controllers
                 HttpContext.Session.SetString("UserName", user.UserName);
                 if (user.Rol == Models.Rol.Admin)
                 {
-                    return RedirectToAction("Index", "Admins");
+                    return RedirectToAction("Home", "Admins");
                 }
                 else
                 {
-                    return RedirectToAction("Index", "Students");
+                    return RedirectToAction("Home", "Students");
                 }
 
             }
